@@ -18,7 +18,7 @@ COPY *.go ./
 
 RUN go build -0 /gin_docker
 
-EXPOSE 8080
+EXPOSE 7897
 
 # This is consistent with the compiled file name
 CMD [ "./gin_docker" ]
@@ -26,4 +26,4 @@ CMD [ "./gin_docker" ]
 # # Specify the file name after compilation. You can use the default file name without setting. The last step is to execute the file name
 # RUN go mod download
 # RUN go build -o /gin_docker
-# EXPOSE 8080
+# EXPOSE 7897
