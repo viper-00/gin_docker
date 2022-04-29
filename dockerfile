@@ -16,7 +16,7 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN go build -0 /gin_docker
+RUN go build -o /gin_docker
 
 EXPOSE 7897
 
