@@ -11,6 +11,7 @@ ENV GO111MODULE=on
 ENV GOPROXY="https://goproxy.io"
 
 # Specify the file name after compilation. You can use the default file name without setting. The last step is to execute the file name
+RUN apk add git
 RUN go build -o gin_docker
 EXPOSE 8080
 
