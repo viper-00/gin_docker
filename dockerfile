@@ -8,6 +8,7 @@ WORKDIR /gin_docker
 # For well-known reasons, some packages will have download timeouts. The proxy service of go module is also used in docker
 ENV GO111MODULE=on
 ENV GOPROXY="https://goproxy.io"
+ENV GOFLAGS=-buildvcs=false
 
 COPY go.mod ./
 COPY go.sum ./
